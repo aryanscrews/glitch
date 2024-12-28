@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+//links working but video playing also for clicking anything, links are not properly working
+<html>
+  <head>
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  
+  </head>
+  
+<body>
+<a-scene embedded arjs="patternRatio:0.80" vr-mode-ui="enabled: false">
+<a-assets>
+  
+  <video 
+         id="video"
+         src="https://cdn.glitch.global/a25a6f89-530d-4b01-aad0-40b84bc7edd5/IntroForGamers.mp4?v=1734550239005"
+  ></video>
+</a-assets>
+
+<a-marker
+type="pattern"
+url="https://cdn.glitch.global/a25a6f89-530d-4b01-aad0-40b84bc7edd5/marker.patt?v=1734533766141"
+>
+         
+        <a-video
+          
+          src="#video"
+          width="3.2"
+          height="1.8"
+          position="-1.5 0 -2"
+          rotation="-90 0 0"
+          ></a-video> 
+  
+          <a-image
+          id="github_icon"
+          width="1"
+          height="1"
+          position="-2.5 0 2.5"
+          rotation="-90 0 0"
+          src="https://cdn.glitch.global/a25a6f89-530d-4b01-aad0-40b84bc7edd5/whatsapp.png?v=1734553955025"
+          url="http://google.com"
+          ></a-image>
+        <a-image
+          id="facebook_icon"
+          width="1"
+          height="1"
+          position="-1 0 2.5"
+          rotation="-90 0 0"
+          src="https://cdn.glitch.global/a25a6f89-530d-4b01-aad0-40b84bc7edd5/facebook.png?v=1734553968151"
+        ></a-image>
+        <a-image
+          id="linkedin_icon"
+          width="1"
+          height="1"
+          position="0.5 0 2.5"
+          rotation="-90 0 0"
+          src="https://cdn.glitch.global/a25a6f89-530d-4b01-aad0-40b84bc7edd5/linkedin.png?v=1734553978446"
+        ></a-image>
+
+        <a-image
+          id="insta_icon"
+          width="1"
+          height="1"
+          position="2 0 2.5"
+          rotation="-90 0 0"
+          src="https://cdn.glitch.global/a25a6f89-530d-4b01-aad0-40b84bc7edd5/instagram.png?v=1734553970796"
+        ></a-image>
+       
+</a-marker>
+<a-entity camera cursor ="fuse:false; rayOrigin: mouse;"></a-entity>
+</a-scene>
+      <script>
+      // Play video on click
+      
+      //const video = document.getElementById("video")
+      window.addEventListener("click", () => {
+      const video = document.getElementById("video")
+            video.play();
+        })
+        
+        
+                  
+      
+      // Open links on image clicks 
+      // animation="property: object3D.position.z; to: 5; loop: true; dur:8000"
+        
+      const openLink = (url) => window.open(url, "_blank");
+
+      const githubIcon = document.getElementById("github_icon");
+      const facebookIcon = document.getElementById("facebook_icon");
+      const linkedinIcon = document.getElementById("linkedin_icon");
+      const instaIcon = document.getElementById("insta_icon");
+
+      githubIcon.addEventListener("click", () => openLink("http://github.com/UtkarshGpta"));
+      facebookIcon.addEventListener("click", () => openLink("http://facebook.com/utkarshgpta"));
+      linkedinIcon.addEventListener("click", () => openLink("https://www.linkedin.com/in/utkarshgpta/"));
+      instaIcon.addEventListener("click", () => openLink("http://instagram.com/utkarshgpta"));
+    </script>
+  
+</body>
+</html> 

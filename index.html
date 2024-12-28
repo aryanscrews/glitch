@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  
+  </head>
+  
+<body>
+<a-scene embedded arjs="patternRatio:0.80" vr-mode-ui="enabled: false">
+
+
+  <a-assets>
+<!--   
+  <video 
+         id="video"
+         src="https://cdn.glitch.global/a25a6f89-530d-4b01-aad0-40b84bc7edd5/IntroForGamers.mp4?v=1734550239005"
+  ></video> -->
+</a-assets>
+
+<a-marker
+type="pattern"
+url="https://cdn.glitch.global/a25a6f89-530d-4b01-aad0-40b84bc7edd5/marker.patt?v=1734533766141"
+>
+         
+<!--         <a-video
+          
+          src="#video"
+          width="3.2"
+          height="1.8"
+          position="-3 0 0"
+          rotation="-90 0 0"
+          ></a-video>  -->
+          <a-image
+          id="profile"
+          width="4.4"
+          height="2.57"
+          position="-1.2 -2 2.5"
+          rotation="-90 0 0"
+          src="https://cdn.glitch.global/a25a6f89-530d-4b01-aad0-40b84bc7edd5/profile?v=1734637745693"
+          link="href: https://caterwauling-glorious-krill.glitch.me/web.html"
+
+          
+          ></a-image> 
+          <a-image
+          id="dp"
+          width="1.5"
+          height="1.5"
+          position="-1 -2 0"
+          rotation="-90 0 0"
+          src="https://cdn.glitch.global/a25a6f89-530d-4b01-aad0-40b84bc7edd5/dp?v=1734637749799"
+          link="href: https://www.linkedin.com/in/nitin-arya/"
+                   animation="property: object3D.position.z; to: -2.5; loop: false; dur:4000"
+          ></a-image> 
+  
+          
+<!--         <a-image
+          id="facebook_icon"
+          width="1"
+          height="1"
+          position="-1 0 2.5"
+          rotation="-90 0 0"
+          src="https://cdn.glitch.global/a25a6f89-530d-4b01-aad0-40b84bc7edd5/facebook.png?v=1734553968151"
+        ></a-image> -->
+<!--           <a-image
+          id="github_icon"
+          width="1"
+          height="1"
+          position="-3 0 0"
+          rotation="-90 0 0"
+          src="https://cdn.glitch.global/a25a6f89-530d-4b01-aad0-40b84bc7edd5/whatsapp.png?v=1734553955025"
+                   link="href: https://www.google.com"
+          ></a-image>
+        <a-image
+          id="linkedin_icon"
+          width="1"
+          height="1"
+          position="-1 0 0"
+          rotation="-90 0 0"
+          src="https://cdn.glitch.global/a25a6f89-530d-4b01-aad0-40b84bc7edd5/linkedin.png?v=1734553978446"
+                 link="href: https://www.linkedin.com"
+          ></a-image>
+
+        <a-image
+          id="insta_icon"
+          width="1"
+          height="1"
+          position="1 0 0"
+          rotation="-90 0 0"
+          src= "https://cdn.glitch.global/a25a6f89-530d-4b01-aad0-40b84bc7edd5/instagram.png?v=1734553970796"
+                link="href: https://www.instagram.com"
+          ></a-image> -->
+       
+</a-marker>
+<!--   <a-entity camera></a-entity> -->
+<a-entity camera cursor =" rayOrigin: mouse;"></a-entity>
+</a-scene>
+      <script>
+      // Play video on click
+      
+      //const video = document.getElementById("video")
+      // window.addEventListener("click", () => {
+      // const video = document.getElementById("video")
+      //       video.play();
+      //   })
+        
+        
+                  
+      
+      // Open links on image clicks 
+      // animation="property: object3D.position.z; to: 5; loop: false; dur:8000"
+        
+//       const openLink = (url) => window.open(url, "_blank");
+
+//       const githubIcon = document.getElementById("github_icon");
+//       const facebookIcon = document.getElementById("facebook_icon");
+//       const linkedinIcon = document.getElementById("linkedin_icon");
+//       const instaIcon = document.getElementById("insta_icon");
+
+//       githubIcon.addEventListener("click", () => openLink("http://wa.me/919429109940"));
+//       facebookIcon.addEventListener("click", () => openLink("http://facebook.com/utkarshgpta"));
+//       linkedinIcon.addEventListener("click", () => openLink("https://www.linkedin.com/in/utkarshgpta/"));
+//       instaIcon.addEventListener("click", () => openLink("http://instagram.com/utkarshgpta"));
+    </script>
+  
+</body>
+</html> 

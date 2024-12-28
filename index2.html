@@ -1,0 +1,46 @@
+<html>
+  <head>
+  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  
+  </head>
+  
+<body>
+<a-scene embedded arjs="patternRatio:0.80">
+<a-marker
+type="pattern"
+url="https://cdn.glitch.global/a25a6f89-530d-4b01-aad0-40b84bc7edd5/marker.patt?v=1734533766141"
+          
+>
+<a-image
+id="profile"
+width="2"
+height="2"
+position="1 0 -2.7"
+rotation="-90 0 0"
+src="https://cdn.glitch.global/7421aab4-6acd-4859-b6b6-c1cc5f9b032c/profile.png?v=1679629727022"
+link="href: https://www.whatsapp.com"
+></a-image>
+<a-image
+id="ar-image1"
+width="2"
+height="2"
+position="2 0 -1.2"
+rotation="-90 0.3 0"
+src="https://cdn.glitch.global/7421aab4-6acd-4859-b6b6-c1cc5f9b032c/ar-image1.png?v=1679629724323"
+         link="href: https://www.google.com"
+></a-image>
+<a-image
+id="ar-image2"
+width="4"
+height="4"
+position="1 0 2.5"
+rotation="-90 0 0"
+src="https://cdn.glitch.global/7421aab4-6acd-4859-b6b6-c1cc5f9b032c/ar-image2.png?v=1679629725151"
+         link="href: https://www.instagram.com"
+></a-image>
+</a-marker>
+<a-entity cursor ="fuse:false; rayOrigin: mouse;"></a-entity>
+</a-scene>
+</body>
+</html> 
